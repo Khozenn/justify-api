@@ -8,7 +8,7 @@ const justifyRoutes = require('./routes/justify')
 import { resetWordsLeft } from "./utils/utils";
 
 const app = express();
-const MONGODB_URI = "mongodb+srv://root:root@ocnode.imerpue.mongodb.net/?retryWrites=true&w=majority";
+const MONGODB_URI = "";
 const cron = new CronJob("0 0 0 * * *", resetWordsLeft); // Event Cron : lancement de resetWorldsLeft tous les jours à minuit
 
 // Connexion à la base de données
